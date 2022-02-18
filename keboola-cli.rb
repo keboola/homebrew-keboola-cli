@@ -4,24 +4,24 @@ class KeboolaCli < Formula
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.2.1_darwin_arm64.zip"
-    sha256 "af1219726f27f5ec87cfb91feb11bdf42ee88c4d10483520a05eee5cf0883ab4"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.2.2_darwin_arm64.zip"
+    sha256 "a2d05c9781cff23a0697997ca0e9270db1bc30798706fd419b8ca37dbd122d60"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.2.1_darwin_amd64.zip"
-    sha256 "7ac8511496ead5d35402fd8b64f4ad349b0d1e168919bbf320ff0b683ca5913b"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.2.2_darwin_amd64.zip"
+    sha256 "ad7343c7a8329a65dc9a6f8a9d8a5852447428093ab4c43122688f42097f7f8a"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.2.1_linux_amd64.zip"
-    sha256 "b27c91ecea6421ac5c53e18904bf703532942847020d689c96bee267ee7166ef"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.2.2_linux_amd64.zip"
+    sha256 "47e78f88cde04adda4114d92bfe94f938d61506453e6f67d79013dd837acfd26"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.2.1_linux_armv6.zip"
-    sha256 "08e9d1723f2d5447c22f3292f3a641f259dfeefcafb9b2154671dec762f9551c"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.2.2_linux_armv6.zip"
+    sha256 "37b71fd5149b39705a58a472b52f5fa8e5c9e69c0867af28548b9512d71c63e9"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.2.1_linux_arm64.zip"
-    sha256 "6a918bcdca4a24b8f2762f195eb08589c3e7661377a4b67dd313fe64f88f107a"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.2.2_linux_arm64.zip"
+    sha256 "05dc6f89d989b891d73d810d4fd70a2b3d30437be8641fdd7248c6b2b41cb68b"
   end
 
   depends_on "git" => :recommended
