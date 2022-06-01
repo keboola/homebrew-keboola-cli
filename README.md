@@ -1,3 +1,6 @@
+# Homebrew Keboola CLI
+
+Config file for Homebrew
 
 ## License
 
