@@ -2,27 +2,27 @@ class KeboolaCli < Formula
   desc "Keboola CLI tool"
   homepage "https://cli.keboola.com"
   license "MIT"
-  version "2.8.1"
+  version "2.8.2"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.8.1_darwin_arm64.zip"
-    sha256 "133d307afb7be524f762b5417d054e6b63c947d262d98940146116d470a60bbd"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.8.2_darwin_arm64.zip"
+    sha256 "6f0b89a7bf2263c83d8b30be67fe7d12a31f1516b1aec80a192ed3f985df7691"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.8.1_darwin_amd64.zip"
-    sha256 "58c5bbd7af9d21b291cf31a6de0e3dea351db75a29d1705e07056c57ee5b3eb9"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.8.2_darwin_amd64.zip"
+    sha256 "b04ecf896906f77b4ef16b2d28adfa16b1605daabeba242be2b7dd43d43e0325"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.8.1_linux_amd64.zip"
-    sha256 "411b38766be1accb7f8735b5db75854635bd6afa0ec0f82116a5e1aefdab1771"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.8.2_linux_amd64.zip"
+    sha256 "dd28c4f6f045e61e8eda6fcc8c1edd5abc594103f17a0f569e2a18347be40822"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.8.1_linux_armv6.zip"
-    sha256 "bfed98afeaec44beaa1203b79745bd822d919ad67052f25710325b602f64ab2f"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.8.2_linux_armv6.zip"
+    sha256 "49daef06390b94db2c8958239671a537422f63e3699df247135821102f45a3b1"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.8.1_linux_arm64.zip"
-    sha256 "428418018e27aded9d5af757f173631dbd5bdffb0a7912e60e87adf6aa15452a"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.8.2_linux_arm64.zip"
+    sha256 "3264a2ecdc848cb2b4484c2f1cafadf81e3b162a0fe3d7986fbfb3a7d9a41e77"
   end
 
   depends_on "git" => :recommended
