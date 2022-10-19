@@ -2,27 +2,27 @@ class KeboolaCli < Formula
   desc "Keboola CLI tool"
   homepage "https://cli.keboola.com"
   license "MIT"
-  version "2.8.14"
+  version "2.9.0"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.8.14_darwin_arm64.zip"
-    sha256 "e364d54c25f6675c6d33b9cc0a6348d745109c1971eef8ea8685b6cd8204065b"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.9.0_darwin_arm64.zip"
+    sha256 "ecdd4ea649c633de00e046103458625f9f8a94fce5901e2ae55e24523e93eeed"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.8.14_darwin_amd64.zip"
-    sha256 "abef2edcf932bc7e1aadaaa392dfb77d88113b29e772a1cfd8d026db4b997a92"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.9.0_darwin_amd64.zip"
+    sha256 "cd7a0dcdce1851d1e664abc3cf74f1007ec7ef7fe16eaf229a10175b432418e2"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.8.14_linux_amd64.zip"
-    sha256 "e5b14d4690c3ea6a3e07ec9aab0e8b62f1b06f3b6ffaa5dd0e7220729c86415d"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.9.0_linux_amd64.zip"
+    sha256 "2a53867691c0f2bf065213c435fd4bef028042ae18b06cbe8729c8f1c51a3e07"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.8.14_linux_armv6.zip"
-    sha256 "e3773dcb569ef3c26c749020328783d6179edf40491bb0f687a621015b9bf91f"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.9.0_linux_armv6.zip"
+    sha256 "1f6ddc7330d404923f11a98f59e21ebfa7fffb60b1665e5960d5a481f42acd02"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.8.14_linux_arm64.zip"
-    sha256 "c4205ba57c985fbb1ca5d066c82a4ff08bce6d8f816c776c009561994a98b22b"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.9.0_linux_arm64.zip"
+    sha256 "113d61a7e35e921d771e9e4a7b6bd5aadad11d4026f4979a5fccfe00b25c334d"
   end
 
   depends_on "git" => :recommended
