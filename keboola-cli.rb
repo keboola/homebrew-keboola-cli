@@ -2,27 +2,27 @@ class KeboolaCli < Formula
   desc "Keboola CLI tool"
   homepage "https://cli.keboola.com"
   license "MIT"
-  version "2.10.0"
+  version "2.11.0"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.10.0_darwin_arm64.zip"
-    sha256 "63a120e9dbc1a477db5da8a375acdf55c57b0554ff051f50782f969090ec1c49"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.11.0_darwin_arm64.zip"
+    sha256 "b800088cce7e5703109037479cc83fe8d409591d733c145f9fe9baefed108b2e"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.10.0_darwin_amd64.zip"
-    sha256 "6ffe2b69aecb15e73a71b18b0d87b1ed445896ff83272c2d2ffd2ee7000f7670"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.11.0_darwin_amd64.zip"
+    sha256 "738df7f1181acd125cdc1d48f13513898b982949f1d7f14b37135c94d3cf419a"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.10.0_linux_amd64.zip"
-    sha256 "bb8b26c9286318f55e40fe5e4b33d2907a0965094e2094e4ec0870e83573d66d"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.11.0_linux_amd64.zip"
+    sha256 "221452b8fa033815acd603681dfbf5fc60062dfcc3cb330d714303feeb6e8b9b"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.10.0_linux_armv6.zip"
-    sha256 "d40da627f692be9f4a5e47e25448831d3606bee5916d61414d5ca0c5779724c4"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.11.0_linux_armv6.zip"
+    sha256 "35e3315115ce5c89dae8156306d7ca52ddd2837de6495980723b776edb92b17b"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.10.0_linux_arm64.zip"
-    sha256 "98250f6b44919c7239df1aa7d51caec15948c8613e1f4d41540e7d51b0e51062"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.11.0_linux_arm64.zip"
+    sha256 "0864d8d65db4d43ba467fbaba25c31411f31fb0b71e2d234490c13b73c5e56da"
   end
 
   depends_on "git" => :recommended
