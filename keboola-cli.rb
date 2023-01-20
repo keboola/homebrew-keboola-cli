@@ -1,28 +1,28 @@
 class KeboolaCli < Formula
   desc "Keboola CLI tool"
-  homepage "https://cli.keboola.com"
+  homepage "https://www.keboola.com/product/cli"
   license "MIT"
-  version "2.11.5"
+  version "2.11.6"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.11.5_darwin_arm64.zip"
-    sha256 "0ef0e10f5836feefb89ab87ef0908b98583a4743bd6f796075669b0190cda14f"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.11.6_darwin_arm64.zip"
+    sha256 "2cb2fd6935f2f267e3af7fdf9181f535be4a17176d2f6afdcde75ad3ef0008c7"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.11.5_darwin_amd64.zip"
-    sha256 "c48fed4a13eb732174df7753567ab08ea41e31d779316547229cce15a2a97539"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.11.6_darwin_amd64.zip"
+    sha256 "d6cf9cb47a72563ec2816f2b39175c5fcfbdbd276ac9723dd728a55b8d48aea5"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.11.5_linux_amd64.zip"
-    sha256 "0eadc5e38e62677bfd9999c92f594084b410e196f9c4c65b9c614aec2a10a321"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.11.6_linux_amd64.zip"
+    sha256 "e2c99d09982ba3e7fbb9dfcb719ede9fee51a716cabd22a4c773ffd0298d9aad"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.11.5_linux_armv6.zip"
-    sha256 "c2786fe2814cd7d1b11817d9a02085e9a45801a6db6aaa790ee79e581b934214"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.11.6_linux_armv6.zip"
+    sha256 "3f3551f251ff8b070af76d80fd4d13fc718531988f93e9c4e15dc5427e52f766"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.11.5_linux_arm64.zip"
-    sha256 "a832df786e3c7e9f47960055b9847af86e0d212fda158d834b964b11f5da45a9"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.11.6_linux_arm64.zip"
+    sha256 "9559b5279a1eb33ca55b80f6b48f57efeee52362f4466641ae0fbe0e02d59300"
   end
 
   depends_on "git" => :recommended
