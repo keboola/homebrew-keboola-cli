@@ -2,27 +2,27 @@ class KeboolaCli < Formula
   desc "Keboola CLI tool"
   homepage "https://www.keboola.com/product/cli"
   license "MIT"
-  version "2.17.0"
+  version "2.18.1"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.17.0_darwin_arm64.zip"
-    sha256 "a6a8ddec1e9e3dc4010879ad8da49b6421ab16283602f5231b75d04040f88cfe"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.18.1_darwin_arm64.zip"
+    sha256 "66d1d6a0c7f3b2987efab9a1885ef38308355a24191915485a919fc8ce48f85f"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.17.0_darwin_amd64.zip"
-    sha256 "448211a4adb5a4bbbeda08bbfc4303b55b73b87edcec83348b3bfa4023aa392f"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.18.1_darwin_amd64.zip"
+    sha256 "1431f2c5baf079511cf2846bb751d2e430b4f9d12b3ceb53d2842fa26859788b"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.17.0_linux_amd64.zip"
-    sha256 "99af36659a3b28c81155590670df3cec4e56dbf2df555322c0d8b39d60623355"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.18.1_linux_amd64.zip"
+    sha256 "32eeab7d5055fa66e4da6154525cd7228ee59241f11d1316f526c84ba23c6f4e"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.17.0_linux_armv6.zip"
-    sha256 "4b0a7680feacd095797754b763ad241fc67af99641179ecf5cb5a252f613385c"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.18.1_linux_armv6.zip"
+    sha256 "f930febf59645c4ee9a92f58f342a76897f2044e006caf4b814211b5ff266aaf"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.17.0_linux_arm64.zip"
-    sha256 "dea0377db98dd3625fd4a4304db3b5cb505a120552bb35dd48ea2d42511f603b"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.18.1_linux_arm64.zip"
+    sha256 "d7710af947c42e83e37a071a482f1ed4c192704efd14d2a2eb27be32bc6ec60e"
   end
 
   depends_on "git" => :recommended
