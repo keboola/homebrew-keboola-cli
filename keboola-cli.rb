@@ -14,15 +14,15 @@ class KeboolaCli < Formula
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://cli-dist.keboola.com/zip/keboola-cli_2.38.5_linux_amd64.zip"
-    sha256 "dfb558490c87c28841cbf2cd706f08eb0222068b95d2008c33fba697386f766c"
+    sha256 "84bd74a865da8525c1cf518ea61b573f0831fe4a4c1a67b14ce58cf598ef677b"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
     url "https://cli-dist.keboola.com/zip/keboola-cli_2.38.5_linux_armv6.zip"
-    sha256 "d6bac5f180b84e7c19c04aad9fc17d97d965db5ed1fc82c99135053ef81fbe82"
+    sha256 "67a475720601667a1f39d71b885528836aa15ec11ab1f8e46d3da06ea0c15939"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://cli-dist.keboola.com/zip/keboola-cli_2.38.5_linux_arm64.zip"
-    sha256 "4b8377d42545d1bf3f96af31bb13d6f48ca8621db705b14376c166bc183beb9f"
+    sha256 "3bd4bf515c013fea6d7592297af21f77b7f1e4ce8984cb2cb6ef74c3216595cc"
   end
 
   depends_on "git" => :recommended
