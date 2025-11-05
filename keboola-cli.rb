@@ -2,27 +2,27 @@ class KeboolaCli < Formula
   desc "Keboola CLI tool"
   homepage "https://www.keboola.com/product/cli"
   license "Apache2"
-  version "2.40.0"
+  version "2.40.1"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.40.0_darwin_arm64.zip"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.40.1_darwin_arm64.zip"
     sha256 ""
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.40.0_darwin_amd64.zip"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.40.1_darwin_amd64.zip"
     sha256 ""
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.40.0_linux_amd64.zip"
-    sha256 "65f7ea4520c7a2581e3e431b5249cd1658af611ac6550b9557cc88f63bdc4d1d"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.40.1_linux_amd64.zip"
+    sha256 "be00f80128be4f63bcf7092239a726beb042b9248cbbef2c929817059527767f"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.40.0_linux_armv6.zip"
-    sha256 "0541740db751c5c68d6301b2f4220fb9e1c2c5fb16e197f563501d11b1ff6f15"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.40.1_linux_armv6.zip"
+    sha256 "2236bbbc624c96d507433ce581c34dd209c1729fcd901098af6e95654c7320d2"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://cli-dist.keboola.com/zip/keboola-cli_2.40.0_linux_arm64.zip"
-    sha256 "c4f35698d579f32d9d29353cd434b4c526e1366a635b117ba430d7f7640b6ccf"
+    url "https://cli-dist.keboola.com/zip/keboola-cli_2.40.1_linux_arm64.zip"
+    sha256 "300f7b1a5de51f5377df759ed08d52452ff0e19d78a2746c48df9d936f9c0660"
   end
 
   depends_on "git" => :recommended
